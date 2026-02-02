@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DNA Royal Skin Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <h1>DNA Royal Skin Clinic</h1>
+  <p>Skin • Hair • Aesthetic Treatments</p>
+
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="welcomeUser()">Submit</button>
+
+  <p id="result"></p>
+
+  <script>
+    function welcomeUser() {
+      const name = document.getElementById("username").value;
+      document.getElementById("result").innerText =
+        "Welcome " + name + "! Thanks for visiting DNA Royal Skin Clinic.";
+    }
+  </script>
+
+</body>
+</html>
